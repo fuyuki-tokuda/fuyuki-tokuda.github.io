@@ -16,12 +16,11 @@
 .affiliation{border-left:3px solid #63918b;padding-left:15px}
 .textlinks a,.section-head>a,.news-row a,.back{color:var(--blue)}
 .research-index{gap:24px}
-.research-index>a{padding:20px 22px;background:#f0f5f8;border-top:2px solid #517e98;transition:background-color .18s ease}
-.research-index>a:nth-child(2){background:#eff5f2;border-top-color:#638a78}
-.research-index>a:nth-child(2) .number{color:#396753}
-.research-index>a:nth-child(3){background:#f7f4ee;border-top-color:#a08a65}
-.research-index>a:nth-child(3) .number{color:#78613b}
-.research-index>a:hover{background:#e5eff3}
+/* Small chamfers on the background keep link focus outlines intact. */
+.research-index>a{position:relative;isolation:isolate;padding:20px 22px;border:0}
+.research-index>a::before{content:"";position:absolute;inset:0;z-index:-1;background:#f3f5f4;clip-path:polygon(0 0,calc(100% - 10px) 0,100% 10px,100% 100%,10px 100%,0 calc(100% - 10px));transition:background-color .18s ease}
+.research-index>a:hover::before{background:#eaf0ef}
+.research-index>a .number{color:#53716c}
 .research-index h3{color:#23465d}
 .section>h2,.section-head h2,.pubgroup h2{border-left:3px solid #638d91;padding-left:16px;color:#23465d}
 .news-row time{color:var(--teal);font-weight:600;font-variant-numeric:tabular-nums}
