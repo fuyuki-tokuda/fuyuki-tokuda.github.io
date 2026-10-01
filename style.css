@@ -7,3 +7,27 @@
 /* A quieter introduction for an individual academic profile. */
 .profile-hero{padding-top:60px;padding-bottom:60px}.profile-hero h1{font-size:clamp(2rem,3.1vw,2.8rem);margin-bottom:4px}.alternate-name{font-size:1.05rem;color:var(--muted);margin-bottom:22px}.affiliation{font-size:.95rem;line-height:1.8;margin-bottom:24px;max-width:530px}.profile-hero .intro{font-size:1rem}.profile-hero .textlinks{margin-top:22px}
 @media(max-width:620px){.profile-hero{padding-top:36px;padding-bottom:36px}.profile-hero h1{font-size:2rem}.alternate-name{margin-bottom:18px}}
+
+/* Restrained color accents across the academic site. */
+:root{--blue:#245b78;--teal:#326e68;--tint:#eef4f5}
+.header{border-top:3px solid var(--blue)}
+.brand{color:#23465d}
+.profile-hero h1,.page-head h1{color:#23465d}
+.affiliation{border-left:3px solid #63918b;padding-left:15px}
+.textlinks a,.section-head>a,.news-row a,.back{color:var(--blue)}
+.research-index{gap:24px}
+.research-index>a{padding:20px 22px;background:#f0f5f8;border-top:2px solid #517e98;transition:background-color .18s ease}
+.research-index>a:nth-child(2){background:#eff5f2;border-top-color:#638a78}
+.research-index>a:nth-child(2) .number{color:#396753}
+.research-index>a:nth-child(3){background:#f7f4ee;border-top-color:#a08a65}
+.research-index>a:nth-child(3) .number{color:#78613b}
+.research-index>a:hover{background:#e5eff3}
+.research-index h3{color:#23465d}
+.section>h2,.section-head h2,.pubgroup h2{border-left:3px solid #638d91;padding-left:16px;color:#23465d}
+.news-row time{color:var(--teal);font-weight:600;font-variant-numeric:tabular-nums}
+.project .eyebrow{color:var(--teal)}
+.badge{background:#edf4f5;border-color:#aac5cd}
+.contact-band{background:#edf3f5;border-top:1px solid #d9e5e8}
+.contact-inner h2{color:#23465d}
+@media(max-width:620px){.research-index{gap:14px}.research-index>a{padding:16px 18px}}
+@media print{.header{border-top:0}.research-index>a,.badge{background:transparent}.section>h2,.section-head h2,.pubgroup h2{border-left:0;padding-left:0}}
