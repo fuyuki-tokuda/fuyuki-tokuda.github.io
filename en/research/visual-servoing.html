@@ -1,1 +1,54 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="A target image and a current image guide precise positioning with an external camera."><meta name="color-scheme" content="light"><title>Learning motion from differences between images | Fuyuki Tokuda</title><link rel="stylesheet" href="../../style.css?v=07c3553a7d"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23124f79' d='M0 0h32v32H0z'/%3E%3Ctext x='5' y='23' font-family='Arial' font-size='21' fill='white'%3Eft%3C/text%3E%3C/svg%3E"><link rel="alternate" hreflang="ja" href="https://fuyuki-tokuda.github.io/research/visual-servoing.html"><link rel="alternate" hreflang="en" href="https://fuyuki-tokuda.github.io/en/research/visual-servoing.html"><link rel="canonical" href="https://fuyuki-tokuda.github.io/en/research/visual-servoing.html"><meta property="og:type" content="website"><meta property="og:title" content="Learning motion from differences between images | Fuyuki Tokuda"><meta property="og:description" content="A target image and a current image guide precise positioning with an external camera."><script defer src="../../site.js"></script></head><body><a class="skip" href="#main">Skip to content</a><header class="header"><nav class="wrap nav" aria-label="Main navigation"><a href="../index.html" class="brand">Fuyuki Tokuda<small>ROBOTICS RESEARCH</small></a><div class="navlinks"><a href="../index.html">Home</a><a href="../research.html" aria-current="page">Research</a><a href="../publications.html">Publications</a><a href="../about.html">About</a></div><div class="lang" aria-label="Language"><b>EN</b> <span aria-hidden="true">/</span> <a href="../../research/visual-servoing.html" class="">日本語</a></div></nav></header><main id="main" class="wrap"><div class="article narrow"><header class="page-head"><p class="eyebrow">IEEE Access / 2021</p><h1>Learning motion from differences between images</h1><p>A target image and a current image guide precise positioning with an external camera.</p></header><h2>The challenge</h2><p>Visual feedback must turn differences in appearance into robot motions that reduce pose error.</p><h2>The approach</h2><p>DEFINet encodes both images with shared CNN weights and regresses relative pose from the difference between their features. Training pairs are collected by moving the manipulator.</p><h2>Evaluation and scope</h2><p>Evaluation used simulation and a real six-degree-of-freedom industrial manipulator. This line of work includes a 2019 SICE journal paper and the 2021 IEEE Access article.</p><details class="video-disclosure"><summary>Watch the experiment</summary><iframe class="video" data-src="https://drive.google.com/file/d/1e7ZV8ooG1zmCdtKO7rDx2XtimpkTY7Jl/preview" title="Learning motion from differences between images — experiment video" allow="autoplay; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe><p class="meta"><a href="https://drive.google.com/file/d/1e7ZV8ooG1zmCdtKO7rDx2XtimpkTY7Jl/preview">Open video in Google Drive</a></p></details><section class="paper-box"><p class="eyebrow">First-author publication</p><strong>Convolutional Neural Network-Based Visual Servoing for Eye-to-Hand Manipulator</strong><p>Fuyuki Tokuda, Shogo Arai, Kazuhiro Kosuge</p><p>IEEE Access, 2021</p><div class="textlinks"><a href="https://doi.org/10.1109/ACCESS.2021.3091737">Paper / DOI</a><a href="https://hub.hku.hk/handle/10722/303042">Author version / repository</a></div></section><p>Related first-author paper: <a href="https://doi.org/10.9746/sicetr.55.717">深層学習に基づくビジュアルサーボによる物体の位置決め (2019)</a></p><a href="../research.html" class="back">Back to research</a></div></main><aside class="contact-band"><div class="wrap contact-inner"><div><p class="eyebrow">Contact</p><h2>Research inquiries</h2></div><div><p>I welcome conversations with researchers, students and industry partners about visual feedback, deformable object manipulation and sewing automation.</p><a class="button" href="mailto:fuyuki.tokuda@gmail.com">Get in touch</a></div></div></aside><footer class="wrap footer"><span>© 2026 Fuyuki Tokuda · Tohoku University</span><span><a href="https://scholar.google.com/citations?user=f6XZQxUAAAAJ">Google Scholar</a> &nbsp; / &nbsp; <a href="https://researchmap.jp/fuyuki.tokuda">researchmap</a> &nbsp; / &nbsp; <a href="mailto:fuyuki.tokuda@gmail.com">Email</a></span></footer></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CNN-based visual servoing for object positioning | Fuyuki Tokuda</title>
+<meta name="description" content="The robot compares a target image with the current image to estimate the motion needed to reach the target pose. This was my doctoral work and uses a camera fixed outside the robot (eye-to-hand).">
+<meta property="og:title" content="CNN-based visual servoing for object positioning | Fuyuki Tokuda">
+<meta property="og:description" content="The robot compares a target image with the current image to estimate the motion needed to reach the target pose. This was my doctoral work and uses a camera fixed outside the robot (eye-to-hand).">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://fuyuki-tokuda.github.io/en/research/visual-servoing.html">
+<link rel="alternate" hreflang="ja" href="https://fuyuki-tokuda.github.io/research/visual-servoing.html">
+<link rel="alternate" hreflang="en" href="https://fuyuki-tokuda.github.io/en/research/visual-servoing.html">
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <a class="site-name" href="../index.html">Fuyuki Tokuda</a>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="../research.html" class="current">Research</a>
+      <a href="../publications.html">Publications</a>
+      <a href="../about.html">CV</a>
+      <a class="lang" href="../../research/visual-servoing.html" hreflang="ja">日本語</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+<h1>CNN-based visual servoing for object positioning</h1>
+<div class="paper">
+<p><b>F. Tokuda</b>, S. Arai and K. Kosuge, “Convolutional Neural Network-Based Visual Servoing for Eye-to-Hand Manipulator,” <i>IEEE Access</i>, vol. 9, pp. 91820-91835, 2021.</p>
+<p class="links"><a href="https://doi.org/10.1109/ACCESS.2021.3091737">DOI</a> / <a href="https://hub.hku.hk/handle/10722/303042">Author version</a></p>
+</div>
+<p>Bringing an object to a target pose requires relating changes in the camera image to robot motion. In this work that relation was learned from images taken by a camera fixed outside the robot (eye-to-hand).</p>
+<p>The proposed DEFINet encodes the target and current images with weight-shared CNNs and regresses the relative pose from the difference between their features. Training pairs of images and motions were collected by moving the robot.</p>
+<p>Positioning was evaluated in simulation and on a real six-axis industrial robot. The work started with a 2019 paper in the SICE Transactions and was extended in the 2021 IEEE Access article.</p>
+
+<h2 id="video">Video</h2>
+<iframe class="video" src="https://drive.google.com/file/d/1e7ZV8ooG1zmCdtKO7rDx2XtimpkTY7Jl/preview" title="CNN-based visual servoing for object positioning" loading="lazy" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<p class="note"><a href="https://drive.google.com/file/d/1e7ZV8ooG1zmCdtKO7rDx2XtimpkTY7Jl/preview">If the video does not load, open it in Google Drive.</a></p>
+<p class="note">Related first-author paper (in Japanese): F. Tokuda, S. Arai and K. Kosuge, “<a href="https://doi.org/10.9746/sicetr.55.717">Object positioning by visual servoing based on deep learning</a>,” <i>Transactions of SICE</i>, vol. 55, no. 11, pp. 717-725, 2019.</p>
+
+<p><a href="../research.html">Back to Research</a></p>
+</main>
+
+<footer>
+  <div class="container">&copy; 2026 Fuyuki Tokuda &nbsp;|&nbsp; Last updated 15 October 2026</div>
+</footer>
+
+</body>
+</html>
