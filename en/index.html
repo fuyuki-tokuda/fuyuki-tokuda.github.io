@@ -11,13 +11,19 @@
 <link rel="canonical" href="https://fuyuki-tokuda.github.io/en/index.html">
 <link rel="alternate" hreflang="ja" href="https://fuyuki-tokuda.github.io/index.html">
 <link rel="alternate" hreflang="en" href="https://fuyuki-tokuda.github.io/en/index.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap">
 <link rel="stylesheet" href="../style.css">
 </head>
 <body>
 
-<header>
+<header class="site-header">
   <div class="container">
-    <a class="site-name" href="index.html">Fuyuki Tokuda</a>
+    <a class="brand" href="index.html">
+      <span class="brand-name">Fuyuki Tokuda<small>徳田 冬樹</small></span>
+      <span class="brand-affil">Unprecedented-scale Data Analytics Center, Tohoku University</span>
+    </a>
     <nav>
       <a href="index.html" class="current">Home</a>
       <a href="research.html">Research</a>
@@ -28,48 +34,94 @@
   </div>
 </header>
 
-<main class="container">
-<div class="profile">
-  <div class="info">
-    <h1>Fuyuki Tokuda<span class="sub">徳田 冬樹</span></h1>
-    <p>Assistant Professor</p>
-    <p>Unprecedented-scale Data Analytics Center, Tohoku University</p>
-    <p class="muted">Also affiliated with the Graduate School of Information Sciences</p>
-    <p>E-mail: <a href="mailto:fuyuki.tokuda@gmail.com">fuyuki.tokuda@gmail.com</a></p>
-    <p class="links"><a href="https://scholar.google.com/citations?user=f6XZQxUAAAAJ">Google Scholar</a> / <a href="https://researchmap.jp/fuyuki.tokuda">researchmap</a> / <a href="https://orcid.org/0000-0002-8623-5497">ORCID</a></p>
+<main>
+<section class="hero">
+  <img src="../assets/texture-matching.jpg" width="1644" height="1019" alt="Fabric texture matching with a dual-arm robot (IEEE RA-L, 2026)">
+  <div class="hero-inner container">
+    <div class="hero-text">
+      <h1>Robot vision and manipulation</h1>
+      <p>I work on visual servoing (visual feedback control), dual-arm fabric manipulation and the automation of sewing.</p>
+    </div>
+    <p class="hero-cap"><a href="research/texture-matching.html">Fabric texture matching with a dual-arm robot (IEEE RA-L, 2026)</a></p>
   </div>
-  <img src="../assets/fuyuki-tokuda.jpg" width="562" height="750" alt="Photo of Fuyuki Tokuda">
-</div>
+</section>
 
-<h2>Research</h2>
-<p>I work on visual servoing: using camera images to drive a robot so that an object reaches a target position. My Ph.D. was on CNN-based object positioning. From 2022 to 2025 I was at TransGP and The University of Hong Kong, where I worked on dual-arm fabric manipulation and automated sewing.</p>
+<div class="container home">
+  <div class="home-main">
+    <section>
+      <h2>About my research</h2>
+      <p>I work on visual servoing: using camera images to drive a robot so that an object reaches a target position. My Ph.D. was on CNN-based object positioning. From 2022 to 2025 I was at TransGP and The University of Hong Kong, where I worked on dual-arm fabric manipulation and automated sewing.</p>
 <p>My current projects combine visual feedback with learning-based methods such as imitation learning and generative models, and use mesh-based shape estimation for fabric. If you are interested in collaborating, please send me an email.</p>
+    </section>
 
-<h2>News</h2>
-<dl class="list news">
-  <div><dt>2026.09</dt><dd>Kai Tang presented our paper “<a href="https://arxiv.org/abs/2510.00814">RTFF: Random-to-Target Fabric Flattening Policy using Dual-Arm Manipulator</a>” at IROS 2026 in Pittsburgh.</dd></div>
-  <div><dt>2026.07</dt><dd>“<a href="https://doi.org/10.1109/TASE.2026.3713128">Robotic Fabric Alignment System for Sewing Using Global Local Weighted ICP</a>” (coauthor) was published in IEEE T-ASE.</dd></div>
-  <div><dt>2026.06</dt><dd>I presented our RA-L paper on fabric texture matching at ICRA 2026.</dd></div>
-  <div><dt>2026.05</dt><dd>“<a href="https://doi.org/10.1109/TMECH.2026.3687606">Design and Development of an End-Effector for Fabric Edge Folding Along a Convex Curve With Multiple Pleats</a>” (coauthor) appeared in IEEE/ASME T-MECH as Early Access.</dd></div>
-  <div><dt>2026.05</dt><dd>Sota Ishii presented joint work on evaluating the basic performance of a vision-language-action (VLA) model at the SICE Tohoku Chapter meeting (<a href="https://www.topic.ad.jp/sice/htdocs/2026/program358.html">program</a>).</dd></div>
-  <div><dt>2026.02</dt><dd>“<a href="https://doi.org/10.1109/TASE.2026.3667879">Automated Action Generation Based on Action Field for Robotic Garment Smoothing and Alignment</a>” (coauthor) was published in IEEE T-ASE.</dd></div>
-  <div><dt>2025.12</dt><dd>My paper “<a href="https://doi.org/10.1109/LRA.2025.3643335">Transformer Driven Visual Servoing for Fabric Texture Matching Using Dual-Arm Manipulator</a>” was published in IEEE RA-L.</dd></div>
-  <div><dt>2025.11</dt><dd>I joined the Unprecedented-scale Data Analytics Center, Tohoku University, as an Assistant Professor.</dd></div>
-</dl>
+    <section>
+      <h2>Projects</h2>
+      <ul class="topics">
+  <li><a href="research/texture-matching.html"><span class="tag">RA-L 2026</span><span class="topic-title">Fabric texture matching with a dual-arm robot</span></a></li>
+  <li><a href="research/automated-sewing.html"><span class="tag">ICMA 2025</span><span class="topic-title">A sewing system covering fabric picking through unloading</span></a></li>
+  <li><a href="research/fixture-free-sewing.html"><span class="tag">T-ASE 2025</span><span class="topic-title">Fixture-free sewing with a dual-arm robot</span></a></li>
+  <li><a href="research/fabric-flattening.html"><span class="tag">ICRA 2023</span><span class="topic-title">Visual servoing for positioning and flattening fabric</span></a></li>
+  <li><a href="research/visual-servoing.html"><span class="tag">Access 2021</span><span class="topic-title">CNN-based visual servoing for object positioning</span></a></li>
+      </ul>
+      <p class="more"><a href="research.html">All projects &rsaquo;</a></p>
+    </section>
 
-<h2>Projects</h2>
-<ul class="plain">
-  <li><a href="research/texture-matching.html">Fabric texture matching with a dual-arm robot</a> <span class="muted">(IEEE RA-L, 2026)</span></li>
-  <li><a href="research/automated-sewing.html">A sewing system covering fabric picking through unloading</a> <span class="muted">(IEEE ICMA, 2025)</span></li>
-  <li><a href="research/fixture-free-sewing.html">Fixture-free sewing with a dual-arm robot</a> <span class="muted">(IEEE T-ASE, 2025)</span></li>
-  <li><a href="research/fabric-flattening.html">Visual servoing for positioning and flattening fabric</a> <span class="muted">(IEEE ICRA, 2023)</span></li>
-  <li><a href="research/visual-servoing.html">CNN-based visual servoing for object positioning</a> <span class="muted">(IEEE Access, 2021)</span></li>
-</ul>
-<p>A full list of papers is on the <a href="publications.html">Publications</a> page.</p>
+    <section>
+      <h2>News</h2>
+      <ul class="news">
+  <li><time>2026.09</time><p>Kai Tang presented our paper “<a href="https://arxiv.org/abs/2510.00814">RTFF: Random-to-Target Fabric Flattening Policy using Dual-Arm Manipulator</a>” at IROS 2026 in Pittsburgh.</p></li>
+  <li><time>2026.07</time><p>“<a href="https://doi.org/10.1109/TASE.2026.3713128">Robotic Fabric Alignment System for Sewing Using Global Local Weighted ICP</a>” (coauthor) was published in IEEE T-ASE.</p></li>
+  <li><time>2026.06</time><p>I presented our RA-L paper on fabric texture matching at ICRA 2026.</p></li>
+  <li><time>2026.05</time><p>“<a href="https://doi.org/10.1109/TMECH.2026.3687606">Design and Development of an End-Effector for Fabric Edge Folding Along a Convex Curve With Multiple Pleats</a>” (coauthor) appeared in IEEE/ASME T-MECH as Early Access.</p></li>
+  <li><time>2026.05</time><p>Sota Ishii presented joint work on evaluating the basic performance of a vision-language-action (VLA) model at the SICE Tohoku Chapter meeting (<a href="https://www.topic.ad.jp/sice/htdocs/2026/program358.html">program</a>).</p></li>
+  <li><time>2026.02</time><p>“<a href="https://doi.org/10.1109/TASE.2026.3667879">Automated Action Generation Based on Action Field for Robotic Garment Smoothing and Alignment</a>” (coauthor) was published in IEEE T-ASE.</p></li>
+  <li><time>2025.12</time><p>My paper “<a href="https://doi.org/10.1109/LRA.2025.3643335">Transformer Driven Visual Servoing for Fabric Texture Matching Using Dual-Arm Manipulator</a>” was published in IEEE RA-L.</p></li>
+  <li><time>2025.11</time><p>I joined the Unprecedented-scale Data Analytics Center, Tohoku University, as an Assistant Professor.</p></li>
+      </ul>
+      <p class="note">A full list of papers is on the <a href="publications.html">Publications</a> page.</p>
+    </section>
+  </div>
+
+  <aside class="home-side">
+    <div class="card profile-card">
+      <img src="../assets/fuyuki-tokuda.jpg" width="562" height="750" alt="Photo of Fuyuki Tokuda">
+      <p class="pc-name">Fuyuki Tokuda</p>
+      <p class="pc-pos">Assistant Professor</p>
+      <p class="pc-affil">Unprecedented-scale Data Analytics Center, Tohoku University<br>Also affiliated with the Graduate School of Information Sciences</p>
+      <p class="pc-mail"><a href="mailto:fuyuki.tokuda@gmail.com">fuyuki.tokuda@gmail.com</a></p>
+    </div>
+    <div class="card">
+      <h3>Links</h3>
+      <ul class="side-links">
+        <li><a href="https://scholar.google.com/citations?user=f6XZQxUAAAAJ">Google Scholar</a></li>
+        <li><a href="https://researchmap.jp/fuyuki.tokuda">researchmap</a></li>
+        <li><a href="https://orcid.org/0000-0002-8623-5497">ORCID</a></li>
+        <li><a href="../assets/publications.pdf">Publication list (PDF, Japanese)</a></li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Grants (PI)</h3>
+      <ul class="side-grants">
+    <li>Telecommunications Advancement Foundation<span>2026–2028</span></li>
+    <li>NSK Foundation for the Advancement of Mechatronics<span>2026–2028</span></li>
+      </ul>
+    </div>
+  </aside>
+</div>
 </main>
 
-<footer>
-  <div class="container">&copy; 2026 Fuyuki Tokuda &nbsp;|&nbsp; Last updated 15 October 2026</div>
+<footer class="site-footer">
+  <div class="container">
+    <div>
+      <p class="foot-name">Fuyuki Tokuda</p>
+      <p>Unprecedented-scale Data Analytics Center, Tohoku University</p>
+    </div>
+    <div class="foot-links">
+      <a href="mailto:fuyuki.tokuda@gmail.com">fuyuki.tokuda@gmail.com</a><br>
+      <a href="https://scholar.google.com/citations?user=f6XZQxUAAAAJ">Google Scholar</a> &middot; <a href="https://researchmap.jp/fuyuki.tokuda">researchmap</a> &middot; <a href="https://orcid.org/0000-0002-8623-5497">ORCID</a>
+    </div>
+  </div>
+  <div class="container foot-bottom">&copy; 2026 Fuyuki Tokuda &nbsp;|&nbsp; Last updated 15 October 2026</div>
 </footer>
 
 </body>

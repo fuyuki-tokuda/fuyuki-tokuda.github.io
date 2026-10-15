@@ -11,13 +11,19 @@
 <link rel="canonical" href="https://fuyuki-tokuda.github.io/en/research.html">
 <link rel="alternate" hreflang="ja" href="https://fuyuki-tokuda.github.io/research.html">
 <link rel="alternate" hreflang="en" href="https://fuyuki-tokuda.github.io/en/research.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap">
 <link rel="stylesheet" href="../style.css">
 </head>
 <body>
 
-<header>
+<header class="site-header">
   <div class="container">
-    <a class="site-name" href="index.html">Fuyuki Tokuda</a>
+    <a class="brand" href="index.html">
+      <span class="brand-name">Fuyuki Tokuda<small>徳田 冬樹</small></span>
+      <span class="brand-affil">Unprecedented-scale Data Analytics Center, Tohoku University</span>
+    </a>
     <nav>
       <a href="index.html">Home</a>
       <a href="research.html" class="current">Research</a>
@@ -28,57 +34,87 @@
   </div>
 </header>
 
-<main class="container">
-<h1>Research</h1>
-<p>These are my first-author projects, newest first. Papers I coauthored are listed under <a href="publications.html">Publications</a>.</p>
+<main>
+<div class="page-title">
+  <div class="container">
+    <p class="crumbs"><a href="index.html">Home</a> &rsaquo; <span>Research</span></p>
+    <h1>Research</h1>
+  </div>
+</div>
 
-<figure>
-<img src="../assets/texture-matching.jpg" width="1644" height="1019" alt="Dual-arm setup used for fabric texture matching (Fig. 1 of the author version).">
-<figcaption>Dual-arm setup used for fabric texture matching (Fig. 1 of the author version).</figcaption>
-</figure>
+<div class="container content">
+<p class="lead">These are my first-author projects, newest first. Papers I coauthored are listed under <a href="publications.html">Publications</a>.</p>
 
-<div class="project">
-<h3><a href="research/texture-matching.html">Fabric texture matching with a dual-arm robot</a></h3>
-<p class="cite">Transformer Driven Visual Servoing for Fabric Texture Matching Using Dual-Arm Manipulator. IEEE RA-L, 2026.</p>
-<p>Two patterned fabric pieces are stacked so that their patterns line up. A Transformer-based model estimates the pose offset from images, and dual-arm impedance control keeps the fabric taut during alignment and placement.</p>
-<p class="links"><a href="research/texture-matching.html">Details</a> / <a href="https://doi.org/10.1109/LRA.2025.3643335">Paper</a> / <a href="research/texture-matching.html#video">Video</a></p>
-</div>
-<div class="project">
-<h3><a href="research/automated-sewing.html">A sewing system covering fabric picking through unloading</a></h3>
-<p class="cite">Robotic Sewing System for Fully Automated Fabric Picking, Stacking, Loading, Sewing, and Unloading. IEEE ICMA, 2025.</p>
-<p>One system picks, stacks, loads, sews and unloads fabric pieces in sequence. It uses no dedicated fixtures and runs from a single PC.</p>
-<p class="links"><a href="research/automated-sewing.html">Details</a> / <a href="https://doi.org/10.1109/ICMA65362.2025.11120842">Paper</a></p>
-</div>
-<div class="project">
-<h3><a href="research/fixture-free-sewing.html">Fixture-free sewing with a dual-arm robot</a></h3>
-<p class="cite">Fixture-Free 2D Sewing Using a Dual-Arm Manipulator System. IEEE T-ASE, 2025.</p>
-<p>The two arms hold the fabric from both sides, adjust its tension and follow a seam line tracked by a camera. Two stacked pieces are sewn together without a fixture, including along curved seams.</p>
-<p class="links"><a href="research/fixture-free-sewing.html">Details</a> / <a href="https://doi.org/10.1109/TASE.2024.3474914">Paper</a> / <a href="research/fixture-free-sewing.html#video">Video</a></p>
-</div>
-<div class="project">
-<h3><a href="research/fabric-flattening.html">Visual servoing for positioning and flattening fabric</a></h3>
-<p class="cite">CNN-based Visual Servoing for Simultaneous Positioning and Flattening of Soft Fabric Parts. IEEE ICRA, 2023.</p>
-<p>A CNN takes camera images and force/torque measurements and outputs dual-arm motions that bring a fabric piece to its target position while removing wrinkles.</p>
-<p class="links"><a href="research/fabric-flattening.html">Details</a> / <a href="https://doi.org/10.1109/ICRA48891.2023.10160635">Paper</a> / <a href="research/fabric-flattening.html#video">Video</a></p>
-</div>
-<div class="project">
-<h3><a href="research/visual-servoing.html">CNN-based visual servoing for object positioning</a></h3>
-<p class="cite">Convolutional Neural Network-Based Visual Servoing for Eye-to-Hand Manipulator. IEEE Access, 2021.</p>
-<p>The robot compares a target image with the current image to estimate the motion needed to reach the target pose. This was my doctoral work and uses a camera fixed outside the robot (eye-to-hand).</p>
-<p class="links"><a href="research/visual-servoing.html">Details</a> / <a href="https://doi.org/10.1109/ACCESS.2021.3091737">Paper</a> / <a href="research/visual-servoing.html#video">Video</a></p>
+<article class="feature">
+  <a class="feature-img" href="research/texture-matching.html"><img src="../assets/texture-matching.jpg" width="1644" height="1019" alt="Dual-arm setup used for fabric texture matching (Fig. 1 of the author version)."></a>
+  <div class="feature-text">
+    <span class="tag">RA-L 2026</span>
+    <h2><a href="research/texture-matching.html">Fabric texture matching with a dual-arm robot</a></h2>
+    <p class="cite">Transformer Driven Visual Servoing for Fabric Texture Matching Using Dual-Arm Manipulator</p>
+    <p>Two patterned fabric pieces are stacked so that their patterns line up. A Transformer-based model estimates the pose offset from images, and dual-arm impedance control keeps the fabric taut during alignment and placement.</p>
+    <p class="card-links"><a href="research/texture-matching.html">Details</a> <a href="https://doi.org/10.1109/LRA.2025.3643335">Paper</a> <a href="research/texture-matching.html#video">Video</a></p>
+  </div>
+</article>
+
+<div class="project-grid">
+<article class="card project-card">
+  <span class="tag">ICMA 2025</span>
+  <h3><a href="research/automated-sewing.html">A sewing system covering fabric picking through unloading</a></h3>
+  <p class="cite">Robotic Sewing System for Fully Automated Fabric Picking, Stacking, Loading, Sewing, and Unloading</p>
+  <p>One system picks, stacks, loads, sews and unloads fabric pieces in sequence. It uses no dedicated fixtures and runs from a single PC.</p>
+  <p class="card-links"><a href="research/automated-sewing.html">Details</a> <a href="https://doi.org/10.1109/ICMA65362.2025.11120842">Paper</a></p>
+</article>
+<article class="card project-card">
+  <span class="tag">T-ASE 2025</span>
+  <h3><a href="research/fixture-free-sewing.html">Fixture-free sewing with a dual-arm robot</a></h3>
+  <p class="cite">Fixture-Free 2D Sewing Using a Dual-Arm Manipulator System</p>
+  <p>The two arms hold the fabric from both sides, adjust its tension and follow a seam line tracked by a camera. Two stacked pieces are sewn together without a fixture, including along curved seams.</p>
+  <p class="card-links"><a href="research/fixture-free-sewing.html">Details</a> <a href="https://doi.org/10.1109/TASE.2024.3474914">Paper</a> <a href="research/fixture-free-sewing.html#video">Video</a></p>
+</article>
+<article class="card project-card">
+  <span class="tag">ICRA 2023</span>
+  <h3><a href="research/fabric-flattening.html">Visual servoing for positioning and flattening fabric</a></h3>
+  <p class="cite">CNN-based Visual Servoing for Simultaneous Positioning and Flattening of Soft Fabric Parts</p>
+  <p>A CNN takes camera images and force/torque measurements and outputs dual-arm motions that bring a fabric piece to its target position while removing wrinkles.</p>
+  <p class="card-links"><a href="research/fabric-flattening.html">Details</a> <a href="https://doi.org/10.1109/ICRA48891.2023.10160635">Paper</a> <a href="research/fabric-flattening.html#video">Video</a></p>
+</article>
+<article class="card project-card">
+  <span class="tag">Access 2021</span>
+  <h3><a href="research/visual-servoing.html">CNN-based visual servoing for object positioning</a></h3>
+  <p class="cite">Convolutional Neural Network-Based Visual Servoing for Eye-to-Hand Manipulator</p>
+  <p>The robot compares a target image with the current image to estimate the motion needed to reach the target pose. This was my doctoral work and uses a camera fixed outside the robot (eye-to-hand).</p>
+  <p class="card-links"><a href="research/visual-servoing.html">Details</a> <a href="https://doi.org/10.1109/ACCESS.2021.3091737">Paper</a> <a href="research/visual-servoing.html#video">Video</a></p>
+</article>
 </div>
 
 <h2>Current work</h2>
-<h3>Learning-based methods with visual feedback</h3>
-<p>I am combining generative models and imitation learning with visual feedback to make deformable object manipulation more precise. I am also looking at how visual feedback can be built into vision-language-action (VLA) models.</p>
-<p class="note">Telecommunications Advancement Foundation research grant, 2026–2028</p>
-<h3>Fabric shape estimation and closed-loop control</h3>
-<p>I am working on combining mesh-based shape estimation with visual feedback control so that deformable objects can be handled more accurately.</p>
-<p class="note">NSK Foundation for the Advancement of Mechatronics research grant, 2026–2028</p>
+<div class="two-col">
+<div class="card">
+  <h3>Learning-based methods with visual feedback</h3>
+  <p>I am combining generative models and imitation learning with visual feedback to make deformable object manipulation more precise. I am also looking at how visual feedback can be built into vision-language-action (VLA) models.</p>
+  <p class="note">Telecommunications Advancement Foundation research grant, 2026–2028</p>
+</div>
+<div class="card">
+  <h3>Fabric shape estimation and closed-loop control</h3>
+  <p>I am working on combining mesh-based shape estimation with visual feedback control so that deformable objects can be handled more accurately.</p>
+  <p class="note">NSK Foundation for the Advancement of Mechatronics research grant, 2026–2028</p>
+</div>
+</div>
+</div>
 </main>
 
-<footer>
-  <div class="container">&copy; 2026 Fuyuki Tokuda &nbsp;|&nbsp; Last updated 15 October 2026</div>
+<footer class="site-footer">
+  <div class="container">
+    <div>
+      <p class="foot-name">Fuyuki Tokuda</p>
+      <p>Unprecedented-scale Data Analytics Center, Tohoku University</p>
+    </div>
+    <div class="foot-links">
+      <a href="mailto:fuyuki.tokuda@gmail.com">fuyuki.tokuda@gmail.com</a><br>
+      <a href="https://scholar.google.com/citations?user=f6XZQxUAAAAJ">Google Scholar</a> &middot; <a href="https://researchmap.jp/fuyuki.tokuda">researchmap</a> &middot; <a href="https://orcid.org/0000-0002-8623-5497">ORCID</a>
+    </div>
+  </div>
+  <div class="container foot-bottom">&copy; 2026 Fuyuki Tokuda &nbsp;|&nbsp; Last updated 15 October 2026</div>
 </footer>
 
 </body>

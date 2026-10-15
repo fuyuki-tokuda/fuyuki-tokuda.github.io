@@ -11,13 +11,19 @@
 <link rel="canonical" href="https://fuyuki-tokuda.github.io/research.html">
 <link rel="alternate" hreflang="ja" href="https://fuyuki-tokuda.github.io/research.html">
 <link rel="alternate" hreflang="en" href="https://fuyuki-tokuda.github.io/en/research.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
+<header class="site-header">
   <div class="container">
-    <a class="site-name" href="index.html">徳田 冬樹</a>
+    <a class="brand" href="index.html">
+      <span class="brand-name">徳田 冬樹<small>Fuyuki Tokuda</small></span>
+      <span class="brand-affil">東北大学 未踏スケールデータアナリティクスセンター</span>
+    </a>
     <nav>
       <a href="index.html">ホーム</a>
       <a href="research.html" class="current">研究</a>
@@ -28,57 +34,87 @@
   </div>
 </header>
 
-<main class="container">
-<h1>研究</h1>
-<p>筆頭著者として取り組んだ研究を新しい順に載せています。共著の研究も含めた一覧は<a href="publications.html">業績</a>にあります。</p>
+<main>
+<div class="page-title">
+  <div class="container">
+    <p class="crumbs"><a href="index.html">ホーム</a> &rsaquo; <span>研究</span></p>
+    <h1>研究</h1>
+  </div>
+</div>
 
-<figure>
-<img src="assets/texture-matching.jpg" width="1644" height="1019" alt="布の柄合わせに用いた双腕ロボットの実験系（論文の著者版 Fig. 1）。">
-<figcaption>布の柄合わせに用いた双腕ロボットの実験系（論文の著者版 Fig. 1）。</figcaption>
-</figure>
+<div class="container content">
+<p class="lead">筆頭著者として取り組んだ研究を新しい順に載せています。共著の研究も含めた一覧は<a href="publications.html">業績</a>にあります。</p>
 
-<div class="project">
-<h3><a href="research/texture-matching.html">双腕ロボットによる布の柄合わせ</a></h3>
-<p class="cite">Transformer Driven Visual Servoing for Fabric Texture Matching Using Dual-Arm Manipulator. IEEE RA-L, 2026.</p>
-<p>柄のある2枚の布を、柄がそろうように重ねます。Transformerに基づくモデルで画像から位置・姿勢のずれを推定し、双腕のインピーダンス制御で布の張りを保ったまま位置合わせと配置を行います。</p>
-<p class="links"><a href="research/texture-matching.html">詳細</a> / <a href="https://doi.org/10.1109/LRA.2025.3643335">論文</a> / <a href="research/texture-matching.html#video">実験動画</a></p>
-</div>
-<div class="project">
-<h3><a href="research/automated-sewing.html">布の取り出しから搬出までを行う自動縫製システム</a></h3>
-<p class="cite">Robotic Sewing System for Fully Automated Fabric Picking, Stacking, Loading, Sewing, and Unloading. IEEE ICMA, 2025.</p>
-<p>布の取り出し、積み重ね、ミシンへの搬入、縫製、搬出を一つのシステムで続けて行います。専用治具は使わず、全体を1台のPCで制御しています。</p>
-<p class="links"><a href="research/automated-sewing.html">詳細</a> / <a href="https://doi.org/10.1109/ICMA65362.2025.11120842">論文</a></p>
-</div>
-<div class="project">
-<h3><a href="research/fixture-free-sewing.html">治具を使わない双腕ロボット縫製</a></h3>
-<p class="cite">Fixture-Free 2D Sewing Using a Dual-Arm Manipulator System. IEEE T-ASE, 2025.</p>
-<p>双腕で布を両側から持ち、張力を調整しながら、カメラで追った縫い線に沿って縫います。重ねた2枚の布を治具なしで縫い合わせることができ、曲線の縫い線も扱えます。</p>
-<p class="links"><a href="research/fixture-free-sewing.html">詳細</a> / <a href="https://doi.org/10.1109/TASE.2024.3474914">論文</a> / <a href="research/fixture-free-sewing.html#video">実験動画</a></p>
-</div>
-<div class="project">
-<h3><a href="research/fabric-flattening.html">布の位置決めとしわ伸ばしを同時に行うビジュアルサーボ</a></h3>
-<p class="cite">CNN-based Visual Servoing for Simultaneous Positioning and Flattening of Soft Fabric Parts. IEEE ICRA, 2023.</p>
-<p>カメラ画像と力・トルクの計測値をCNNに入力し、布を目標位置に合わせながら、しわも伸ばす双腕の動作を求めます。</p>
-<p class="links"><a href="research/fabric-flattening.html">詳細</a> / <a href="https://doi.org/10.1109/ICRA48891.2023.10160635">論文</a> / <a href="research/fabric-flattening.html#video">実験動画</a></p>
-</div>
-<div class="project">
-<h3><a href="research/visual-servoing.html">CNNを用いたビジュアルサーボによる物体の位置決め</a></h3>
-<p class="cite">Convolutional Neural Network-Based Visual Servoing for Eye-to-Hand Manipulator. IEEE Access, 2021.</p>
-<p>目標画像と現在画像の比較から、物体を目標の位置・姿勢へ動かす動作を推定します。博士課程で取り組んだ研究で、ロボットの外に固定したカメラを使っています。</p>
-<p class="links"><a href="research/visual-servoing.html">詳細</a> / <a href="https://doi.org/10.1109/ACCESS.2021.3091737">論文</a> / <a href="research/visual-servoing.html#video">実験動画</a></p>
+<article class="feature">
+  <a class="feature-img" href="research/texture-matching.html"><img src="assets/texture-matching.jpg" width="1644" height="1019" alt="布の柄合わせに用いた双腕ロボットの実験系（論文の著者版 Fig. 1）。"></a>
+  <div class="feature-text">
+    <span class="tag">RA-L 2026</span>
+    <h2><a href="research/texture-matching.html">双腕ロボットによる布の柄合わせ</a></h2>
+    <p class="cite">Transformer Driven Visual Servoing for Fabric Texture Matching Using Dual-Arm Manipulator</p>
+    <p>柄のある2枚の布を、柄がそろうように重ねます。Transformerに基づくモデルで画像から位置・姿勢のずれを推定し、双腕のインピーダンス制御で布の張りを保ったまま位置合わせと配置を行います。</p>
+    <p class="card-links"><a href="research/texture-matching.html">詳細</a> <a href="https://doi.org/10.1109/LRA.2025.3643335">論文</a> <a href="research/texture-matching.html#video">実験動画</a></p>
+  </div>
+</article>
+
+<div class="project-grid">
+<article class="card project-card">
+  <span class="tag">ICMA 2025</span>
+  <h3><a href="research/automated-sewing.html">布の取り出しから搬出までを行う自動縫製システム</a></h3>
+  <p class="cite">Robotic Sewing System for Fully Automated Fabric Picking, Stacking, Loading, Sewing, and Unloading</p>
+  <p>布の取り出し、積み重ね、ミシンへの搬入、縫製、搬出を一つのシステムで続けて行います。専用治具は使わず、全体を1台のPCで制御しています。</p>
+  <p class="card-links"><a href="research/automated-sewing.html">詳細</a> <a href="https://doi.org/10.1109/ICMA65362.2025.11120842">論文</a></p>
+</article>
+<article class="card project-card">
+  <span class="tag">T-ASE 2025</span>
+  <h3><a href="research/fixture-free-sewing.html">治具を使わない双腕ロボット縫製</a></h3>
+  <p class="cite">Fixture-Free 2D Sewing Using a Dual-Arm Manipulator System</p>
+  <p>双腕で布を両側から持ち、張力を調整しながら、カメラで追った縫い線に沿って縫います。重ねた2枚の布を治具なしで縫い合わせることができ、曲線の縫い線も扱えます。</p>
+  <p class="card-links"><a href="research/fixture-free-sewing.html">詳細</a> <a href="https://doi.org/10.1109/TASE.2024.3474914">論文</a> <a href="research/fixture-free-sewing.html#video">実験動画</a></p>
+</article>
+<article class="card project-card">
+  <span class="tag">ICRA 2023</span>
+  <h3><a href="research/fabric-flattening.html">布の位置決めとしわ伸ばしを同時に行うビジュアルサーボ</a></h3>
+  <p class="cite">CNN-based Visual Servoing for Simultaneous Positioning and Flattening of Soft Fabric Parts</p>
+  <p>カメラ画像と力・トルクの計測値をCNNに入力し、布を目標位置に合わせながら、しわも伸ばす双腕の動作を求めます。</p>
+  <p class="card-links"><a href="research/fabric-flattening.html">詳細</a> <a href="https://doi.org/10.1109/ICRA48891.2023.10160635">論文</a> <a href="research/fabric-flattening.html#video">実験動画</a></p>
+</article>
+<article class="card project-card">
+  <span class="tag">Access 2021</span>
+  <h3><a href="research/visual-servoing.html">CNNを用いたビジュアルサーボによる物体の位置決め</a></h3>
+  <p class="cite">Convolutional Neural Network-Based Visual Servoing for Eye-to-Hand Manipulator</p>
+  <p>目標画像と現在画像の比較から、物体を目標の位置・姿勢へ動かす動作を推定します。博士課程で取り組んだ研究で、ロボットの外に固定したカメラを使っています。</p>
+  <p class="card-links"><a href="research/visual-servoing.html">詳細</a> <a href="https://doi.org/10.1109/ACCESS.2021.3091737">論文</a> <a href="research/visual-servoing.html#video">実験動画</a></p>
+</article>
 </div>
 
 <h2>現在進めている研究</h2>
-<h3>学習ベースの手法とビジュアルフィードバック</h3>
-<p>生成モデルや模倣学習とビジュアルフィードバックを組み合わせて、柔軟物操作の精度を上げることを目指しています。視覚言語行動モデル（VLA）にビジュアルフィードバックを組み込む方法も検討中です。</p>
-<p class="note">電気通信普及財団 研究調査助成（2026〜2028年度）</p>
-<h3>布の形状推定と閉ループ制御</h3>
-<p>メッシュによる形状推定とビジュアルフィードバック制御を組み合わせ、変形する物体をより正確に扱う方法を研究しています。</p>
-<p class="note">NSKメカトロニクス技術高度化財団 研究助成（2026〜2028年度）</p>
+<div class="two-col">
+<div class="card">
+  <h3>学習ベースの手法とビジュアルフィードバック</h3>
+  <p>生成モデルや模倣学習とビジュアルフィードバックを組み合わせて、柔軟物操作の精度を上げることを目指しています。視覚言語行動モデル（VLA）にビジュアルフィードバックを組み込む方法も検討中です。</p>
+  <p class="note">電気通信普及財団 研究調査助成（2026〜2028年度）</p>
+</div>
+<div class="card">
+  <h3>布の形状推定と閉ループ制御</h3>
+  <p>メッシュによる形状推定とビジュアルフィードバック制御を組み合わせ、変形する物体をより正確に扱う方法を研究しています。</p>
+  <p class="note">NSKメカトロニクス技術高度化財団 研究助成（2026〜2028年度）</p>
+</div>
+</div>
+</div>
 </main>
 
-<footer>
-  <div class="container">&copy; 2026 徳田 冬樹 &nbsp;|&nbsp; 最終更新 2026年10月15日</div>
+<footer class="site-footer">
+  <div class="container">
+    <div>
+      <p class="foot-name">徳田 冬樹</p>
+      <p>東北大学 未踏スケールデータアナリティクスセンター</p>
+    </div>
+    <div class="foot-links">
+      <a href="mailto:fuyuki.tokuda@gmail.com">fuyuki.tokuda@gmail.com</a><br>
+      <a href="https://scholar.google.com/citations?user=f6XZQxUAAAAJ">Google Scholar</a> &middot; <a href="https://researchmap.jp/fuyuki.tokuda">researchmap</a> &middot; <a href="https://orcid.org/0000-0002-8623-5497">ORCID</a>
+    </div>
+  </div>
+  <div class="container foot-bottom">&copy; 2026 徳田 冬樹 &nbsp;|&nbsp; 最終更新 2026年10月15日</div>
 </footer>
 
 </body>
