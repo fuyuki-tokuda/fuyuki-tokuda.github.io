@@ -148,6 +148,14 @@ p { margin: 0 0 1em; }
   overflow-wrap: anywhere;
 }
 .hero p { font-size: 1rem; margin: 0; opacity: .92; }
+
+/* ---------- home body */
+.home {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 290px;
+  gap: 48px;
+  padding-bottom: 20px;
+}
 .home-main h2:first-child, .home-main section:first-child h2 { margin-top: 1.6em; }
 .home-side { padding-top: 40px; }
 
@@ -338,7 +346,6 @@ ul.plain li { margin-bottom: .5em; }
   .hero-inner { min-height: 300px; padding-bottom: 56px; }
   .hero h1 { font-size: 1.45rem; }
   .hero::before { background: linear-gradient(180deg, rgba(10,24,40,.55) 0%, rgba(10,24,40,.85) 100%); }
-
   .topics, .project-grid, .two-col { grid-template-columns: 1fr; }
   .home-side { grid-template-columns: 1fr; }
   .news li, dl.list div { grid-template-columns: 1fr; }
