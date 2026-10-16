@@ -27,6 +27,13 @@ a { color: var(--link); }
 a:hover { color: #b0381e; }
 img { max-width: 100%; height: auto; display: block; }
 
+a:focus-visible, button:focus-visible, summary:focus-visible {
+  outline: 3px solid #3f86c9;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+.site-header a:focus-visible, .site-footer a:focus-visible, .hero a:focus-visible { outline-color: var(--accent); }
+
 .container {
   max-width: 1080px;
   margin: 0 auto;
