@@ -50,6 +50,10 @@
 <p><b>F. Tokuda</b>, S. Arai and K. Kosuge, “Convolutional Neural Network-Based Visual Servoing for Eye-to-Hand Manipulator,” <i>IEEE Access</i>, vol. 9, pp. 91820-91835, 2021.</p>
 <p class="links"><a href="https://doi.org/10.1109/ACCESS.2021.3091737">DOI</a> / <a href="https://hub.hku.hk/handle/10722/303042">著者版</a></p>
 </div>
+<figure>
+<img src="../assets/visual-servoing.jpg" width="1100" height="661" alt="位置決め実験に用いた実験系。6自由度マニピュレータ（DENSO VS068）、外部カメラ（The Imaging Source DMK33UX265）、LED照明、平行グリッパ、対象物体と整列トレイで構成しています。">
+<figcaption>位置決め実験に用いた実験系。6自由度マニピュレータ（DENSO VS068）、外部カメラ（The Imaging Source DMK33UX265）、LED照明、平行グリッパ、対象物体と整列トレイで構成しています。</figcaption>
+</figure>
 <p>物体を目標の位置・姿勢に合わせるには、カメラ画像の変化をロボットの動きに結びつける必要があります。この研究では、ロボットの外に固定したカメラ（eye-to-hand）の画像から、その動きを学習で求めました。</p>
 <p>提案したDEFINetは、重みを共有するCNNで目標画像と現在画像をそれぞれ特徴に変換し、その差から相対的な位置・姿勢を推定します。学習には、ロボットを動かして集めた画像と動作の組を使います。</p>
 <p>シミュレーションと6自由度の産業用ロボットによる実機実験で、位置決めの性能を評価しました。2019年の計測自動制御学会論文集の論文が最初の成果で、2021年のIEEE Access論文はその発展です。</p>

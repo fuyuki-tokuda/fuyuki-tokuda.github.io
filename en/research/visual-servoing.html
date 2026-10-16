@@ -50,6 +50,10 @@
 <p><b>F. Tokuda</b>, S. Arai and K. Kosuge, “Convolutional Neural Network-Based Visual Servoing for Eye-to-Hand Manipulator,” <i>IEEE Access</i>, vol. 9, pp. 91820-91835, 2021.</p>
 <p class="links"><a href="https://doi.org/10.1109/ACCESS.2021.3091737">DOI</a> / <a href="https://hub.hku.hk/handle/10722/303042">Author version</a></p>
 </div>
+<figure>
+<img src="../../assets/visual-servoing.jpg" width="1100" height="661" alt="Experimental setup for positioning: a 6-DOF manipulator (DENSO VS068), an external camera (The Imaging Source DMK33UX265), an LED light, a parallel gripper, the object and an alignment tray.">
+<figcaption>Experimental setup for positioning: a 6-DOF manipulator (DENSO VS068), an external camera (The Imaging Source DMK33UX265), an LED light, a parallel gripper, the object and an alignment tray.</figcaption>
+</figure>
 <p>Bringing an object to a target pose requires relating changes in the camera image to robot motion. In this work that relation was learned from images taken by a camera fixed outside the robot (eye-to-hand).</p>
 <p>The proposed DEFINet encodes the target and current images with weight-shared CNNs and regresses the relative pose from the difference between their features. Training pairs of images and motions were collected by moving the robot.</p>
 <p>Positioning was evaluated in simulation and on a real six-axis industrial robot. The work started with a 2019 paper in the SICE Transactions and was extended in the 2021 IEEE Access article.</p>
