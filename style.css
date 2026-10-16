@@ -185,10 +185,10 @@ p { margin: 0 0 1em; }
 .topics { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
 .topics a {
   display: flex;
-  flex-direction: column;
-  gap: 4px;
+  align-items: center;
+  gap: 14px;
   height: 100%;
-  padding: 14px 16px;
+  padding: 12px;
   background: var(--bg-soft);
   border-left: 3px solid var(--navy);
   text-decoration: none;
@@ -197,6 +197,10 @@ p { margin: 0 0 1em; }
 }
 .topics a:hover { background: #e8edf2; color: var(--text); }
 .topic-title { font-weight: 500; line-height: 1.6; }
+.topic-img { flex: 0 0 112px; }
+.topic-img img, .topic-img--empty { display: block; width: 100%; aspect-ratio: 3 / 2; object-fit: contain; background: #fff; border: 1px solid var(--line); }
+.topic-img--empty { background: #fff; }
+.topic-text { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
 .more { text-align: right; margin-top: .8em; font-size: .92rem; }
 
 .tag {
