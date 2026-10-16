@@ -18,7 +18,7 @@
 </head>
 <body>
 
-<header class="site-header">
+<header class="site-header site-header--home">
   <div class="container">
     <a class="brand" href="index.html">
       <span class="brand-name">徳田 冬樹<small>Fuyuki Tokuda</small></span>
@@ -116,5 +116,18 @@
   <div class="container foot-bottom">&copy; 2026 徳田 冬樹 &nbsp;|&nbsp; 最終更新 2026年10月15日</div>
 </footer>
 
+<script>
+(function () {
+  var h = document.querySelector('.site-header--home'), hero = document.querySelector('.hero');
+  if (!h || !hero) return;
+  function update() {
+    document.documentElement.style.setProperty('--header-h', h.offsetHeight + 'px');
+    h.classList.toggle('over-hero', window.scrollY < hero.offsetHeight - h.offsetHeight - 8);
+  }
+  update();
+  window.addEventListener('scroll', update, { passive: true });
+  window.addEventListener('resize', update);
+})();
+</script>
 </body>
 </html>
