@@ -241,6 +241,7 @@ p { margin: 0 0 1em; }
 .pc-name { font-size: 1.15rem; font-weight: 700; }
 .pc-pos { color: var(--navy); font-weight: 500; }
 .pc-affil { font-size: .82rem; color: var(--muted); line-height: 1.6; margin: .4em 0 .6em !important; }
+.pc-lab { font-size: .9rem; font-weight: 500; margin: 0 0 .5em !important; }
 .pc-mail { font-size: .85rem; word-break: break-all; }
 
 .side-links { list-style: none; margin: 0; padding: 0; font-size: .9rem; }
